@@ -1,0 +1,32 @@
+#Layer_2{
+    z-index: 0;
+    box-sizing: border-box;
+    animation: layer2 20s ease-in-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes layer2{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+#Layer_3{
+    position: absolute;
+    z-index: 0;
+    box-sizing: border-box;
+    animation: layer3 20s ease-in-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes layer3{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(-360deg);
+    }
+}
+

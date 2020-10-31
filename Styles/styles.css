@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+/* #pattern-1{
+    position: absolute;
+    z-index: 0;
+    top: -20%;
+    left: -20%;
+    opacity: 40%;
+    width: 500px;
+} */
+.nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background-color:none;
+    overflow: hidden;
+    padding: 10px 30px 10px 30px;
+    justify-content: flex-end;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+.nav a{
+    float: right;
+    color: white;
+    opacity: 0.5;
+    padding: 15px;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease;
+
+}
+.nav a:hover{
+    color: orange;
+    opacity: 0.7;
+}
+.nav a:active{
+    color: orange;
+    opacity: 1;
+}
+.header{
+    z-index: -2;
+    position: relative;
+    background-color: rgb(6,2,3);
+    height: 730px;
+    overflow: none;
+    margin: none;
+}
+.buffer{
+    box-sizing: border-box;
+    min-height: 200px;
+}
+.img{
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 20%;
+    opacity: 80%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+#heading-1{
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+    font-size: 90px;
+    color: white;
+    animation: heading1 2s ease-in-out;
+}
+@keyframes heading1{
+    0%{
+        opacity:0%;
+        transform: translateX(-50%);
+    }
+    80%{
+        opacity: 100%;
+        transform: translateX(5%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0%);
+        z-index: 2;
+    }
+}
+#heading-2{
+    position: absolute;
+    top: 290px;
+    z-index: 1;
+    padding: 0;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+    font-size: 90px;
+    color: orange;
+    animation: heading2 2s ease-in-out;
+}
+@keyframes heading2{
+    0%{
+        opacity:0%;
+        transform: translateX(50%);
+    }
+    80%{
+        opacity: 100%;
+        transform: translateX(-5%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0%);
+        z-index: 2;
+    }
+}
+.body{
+    background-color: whitesmoke;
+    overflow: hidden;
+    /* height: 200vh; */
+}
+.body-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 600px;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    align-items: center;
+}
+.body-content{
+    padding: 80px
+}
+#svg1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 800px;
+    opacity: 0.2;
+}
+#about{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+    color:white;
+    text-shadow: rgb(65, 65, 65) 3px 3px 10px;
+}
+
+.work{
+    box-sizing: border-box;
+    min-height: 600px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#work-title{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+}
+
+.container .gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-div{
+    background-color: none;
+    margin-bottom: 150px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+}
+
+.img-div:hover{
+    background-color: orange;
+}
+
+.col-lg-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-div > a{
+    transition: all 0.5s ease;
+}
+
+.img-div > a:hover{
+    filter: blur(4px);
+    opacity: 0.8;
+}
+
+.name{
+    /* opacity: 0; */
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+} 
+
+.name-active{
+    opacity: 100%;
+}
+.footer{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: rgb(56, 56, 56);
+    height: 50vh;
+    padding-top: 150px;
+	color: white;
+	width: 100%;
+	min-height:200px;
+    background-color: #212022;
+}
+p > a{
+    color:white;
+    transition: color 0.3s ease-in-out;
+}
+p > a:hover{
+    color: orange;
+}
+p > a:active{
+    color: orangered;
+}
